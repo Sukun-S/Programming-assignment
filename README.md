@@ -1,2 +1,2 @@
 # Programming-assignment
-All the programming question and answers
+All the  basic programming question and answers that will be helpful for interviews.
