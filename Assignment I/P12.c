@@ -2,15 +2,18 @@
 int main() 
 { 
     
-     double x, y;
-    printf("Enter a: ");
-    scanf("%lf", &a);
-    printf("Enter b: ");
-    scanf("%lf", &b);
     
-    x = x + y; // x now becomes  
-    y = x - y; // y becomes  
-    x = x - y; // x becomes 
-   printf("Results after changing values: x = %d, y = %d", x, y); 
+     float x, y;
+    printf("Enter x: ");
+    scanf("%f", &x);
+    printf("Enter y: ");
+    scanf("%f", &y);
+    
+   
+    
+    x = x + y; // x now combines x and y
+    y = x - y; // y becomes  x and y
+    x = x - y; // x finally gives the results
+   printf("Results after changing values: x = %f, y = %f", x, y); 
    return 0; 
 }
