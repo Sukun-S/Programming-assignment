@@ -4,7 +4,7 @@
 
 unsigned long amount=1000, deposit, withdraw;
 
-int choice, pin, k;
+int choice, k;
 
 char transaction ='y';
 
@@ -14,31 +14,8 @@ int main()
 
 {
 
-	while (pin != 1520)
-
-	{
-
-		printf("ENTER YOUR SECRET PIN NUMBER:");
-
-		scanf("%d", &pin);
-
-		if (pin != 1520)
-
-		printf("PLEASE ENTER VALID PASSWORD\n");
-
-	}
-
-	do
-
-	{
-
-		printf("********Welcome to ATM Service**************\n");
-
-		printf("1. Check Balance\n");
 
 		printf("2. Withdraw Cash\n");
-
-		printf("3. Deposit Cash\n");
 
 		printf("4. Quit\n");
 
@@ -53,12 +30,6 @@ int main()
 		{
 
 		case 1:
-
-			printf("\n YOUR BALANCE IN Rs : %lu ", amount);
-
-			break;
-
-		case 2:
 
 			printf("\n ENTER THE AMOUNT TO WITHDRAW: ");
 
@@ -94,24 +65,7 @@ int main()
 
 			break;
 
-		case 3:
-
-			printf("\n ENTER THE AMOUNT TO DEPOSIT");
-
-			scanf("%lu", &deposit);
-
-                        amount = amount + deposit;
-
-			printf("YOUR BALANCE IS %lu", amount);
-
-			break;
-
-		case 4:
-
-			printf("\n THANK U USING ATM");
-
-			break;
-
+		
 		default:
 
 			printf("\n INVALID CHOICE");
