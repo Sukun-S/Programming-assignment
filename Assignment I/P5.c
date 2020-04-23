@@ -1,8 +1,18 @@
-    #include <stdio.h>
+  
+
+#include <stdio.h>
     int main()
     {
-    	int n = 1987;
-    	int th,h,t,u;  // Thousands,hundreds,tens,units
+    	int n;
+    	int th,h,t,u;
+        
+
+ 	
+ 	   printf("Enter n: ");
+ 	   scanf("%d", &n);
+ 	   
+	
+        // Thousands,hundreds,tens,units
         u=n%10;
         t=(n/10)%10;
         h=(n/100)%10;
