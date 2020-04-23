@@ -1,21 +1,26 @@
-#include<stdio.h>
+
+
+#include <stdio.h>
 
 int main()
+
 {
-	int a,b,numbers;
 
-	
-	printf("Enter the first no.: "); // ask for the value of a
-	scanf("%d",&a);
+        int number,a,b;
 
-	
-	printf("Enter the second no.: "); // ask for the value of b
-	scanf("%d",&b);
 
-	//formula
-	numbers= a-b;
-	printf("subtract is = %d\n", numbers);
+        printf ("Enter numbers a, b ") ;
 
-	return 0;
-}
+        scanf ("%d %d", &a, &b);
 
+        for (number = a; number <= b; number++)
+
+             {
+
+                printf("%d ", number);
+
+             }
+
+            return 0;
+
+} 
