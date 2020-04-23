@@ -2,16 +2,16 @@
 
 int main()
 {
-    int phy, chem, bio, math, comp; 
+    int a, b, c, d, e; 
     float per; 
 
     /* Input marks of five subjects from user */
     printf("Enter five subjects marks: ");
-    scanf("%d%d%d%d%d", &phy, &chem, &bio, &math, &comp);
+    scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
 
 
     /* Calculate percentage */
-    per = (phy + chem + bio + math + comp) / 5.0;
+    per = (a + b + c + d + e) / 5.0;
 
     printf("Percentage = %.2f\n", per);
 
@@ -19,23 +19,24 @@ int main()
     /* Find grade according to the percentage */
     if(per >= 90)
     {
-        printf("Grade A");
+        printf("Grade A+");
     }
     else if(per >= 80)
     {
-        printf("Grade B");
+        printf("Grade A");
     }
     else if(per >= 70)
     {
-        printf("Grade C");
+        printf("Grade B+");
     }
     else if(per >= 60)
     {
-        printf("Grade D");
+        printf("Grade B");
     }
-    else if(per >= 40)
+    else if(per >= 50)
     {
-        printf("Grade E");
+        printf("Grade C");
+    
     }
     else
     {
