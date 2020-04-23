@@ -4,7 +4,7 @@ int main()
 {
     int week;
     
-    /* Input week number from user */
+    // Input week number from user
     printf("Enter week number(1-7): ");
     scanf("%d", &week);
     
