@@ -1,6 +1,9 @@
 
+
+
 #include <stdio.h>
-#include <math.h> /* Used for sqrt() */
+#include <math.h> // saw this from a tutorial and did
+
 
 int main()
 {
