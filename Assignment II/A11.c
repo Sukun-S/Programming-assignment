@@ -1,8 +1,9 @@
-#include <stdio.h>
+   #include <stdio.h>
 
-int main()
+    int main()
 {
     int week;
+    
     
     // Input week number from user
     printf("Enter week number(1-7): ");
@@ -32,7 +33,7 @@ int main()
             printf("Sunday");
             break;
         default: 
-            printf("Invalid input! Please enter week number between 1-7.");
+            printf("re enter if its invalid.");
     }
 
     return 0;
