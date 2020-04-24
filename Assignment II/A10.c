@@ -2,16 +2,16 @@
 
 int main()
 {
-    int a, b, c, d, e; 
+    int a; 
     float per; 
 
     /* Input marks of five subjects from user */
-    printf("Enter five subjects marks: ");
-    scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
+    printf("Enter marks: ");
+    scanf("%d", &a);
 
 
     /* Calculate percentage */
-    per = (a + b + c + d + e) / 5.0;
+    per = (a/500.0)*100;
 
     printf("Percentage = %.2f\n", per);
 
