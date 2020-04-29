@@ -2,21 +2,17 @@
 
  int main()
 	{
-	int n, f=1, i;
+	int no,i, fact=1;
 	
 	printf("Enter a number:");
-	scanf("%d",&n);
+	scanf("%d",&no);
  	
 
-	for(i=1;i<=n/2;i++)
-	{
- 		if(n%i==0)
-			{
-			++f;
-			}
-	}
+	for(i=no; i>=1; i--){
+			fact =fact*i;
+				}
 
-	printf("Factorial %d\n", n);
+	printf("Factorial %d\n", fact);
 
 	return 0;
 	}
