@@ -6,20 +6,21 @@ int main()
 
 {
 
-        int number,a,b;
+        int number,a,b, totalnumber;
 
 
-        printf ("Enter numbers a, b ") ;
+        printf ("Enter numbers a, b : ") ;
 
         scanf ("%d %d", &a, &b);
 
-        for (number = a; number <= b; number++)
+	if(a>b){
+		totalnumber = (a-b)-1;
+		printf("%d: is the no of integers in between them\n",totalnumber);
+	}
+		else
+		totalnumber= (b-a)-1;
+		printf("%d:is the no of integers in between them\n", totalnumber);
 
-             {
-
-                printf("%d ", number);
-
-             }
 
             return 0;
 
