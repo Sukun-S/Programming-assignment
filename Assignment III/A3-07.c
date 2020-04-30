@@ -1,35 +1,22 @@
 #include<stdio.h>
-
 int main()
-
 {
-
-int min, max, n ,rem, fact, sum, i, strong, j;
-
-printf("min and max :");
-scanf("%d%d", &min, &max);
-
-for( i=min;i<=max; i++)
+int n=10000,i,num,sum=0,j;
+printf("all the amstrong number between 1 to %d are:\n",n); 
+for(i=1;i<=n;i++)
 {
-		n=i;
-		strong = n;
-		sum =0;
-	{
-		rem = n%10;
-		fact =1;
-		
-			for(j=1;j<=rem; j++)
-			fact = fact*j;
-			sum= sum+fact;
-			n=n/10;
-
-			if(strong==sum)
-			{
-
-			printf("%d\n", strong);
-			}
+	num=i;
+	sum=0;
+while(num!=0)
+{
+j=num%10;
+sum=sum+(j*j*j);
+num=num/10;
 }
 
+if(sum==i)
+{
+	printf("%d is amstrong number\n",i);}
 }
 
 return 0;
