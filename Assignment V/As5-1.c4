@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(){
+
+int n, m, t=1;
+
+printf("\nEnter a number: ");
+scanf("%d",&n);
+ m=n/10;
+ while(m!=0){
+      t*=10;
+      m/=10;
+   }
+   n%=t;
+
+printf("%d",n);
+
+return 0;
+
+}
